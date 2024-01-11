@@ -1,0 +1,114 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.crumbs ol {
+  list-style-type: none;
+}
+
+nav {
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.crumb {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.crumb a::after {
+  display: inline-block;
+  color: white;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+
+.background_img {
+  width: 100%;
+  height: auto;
+}
+
+.mission {
+  position: relative;
+}
+
+.centered_top h2{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.centered_top h3{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.portfolio {
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+}
+
+.portfolio_text {
+  text-align: center;
+}
+
+.portfolio img {
+  display: inline-block;
+  width: 15%;
+  height: auto;
+  vertical-align: middle;
+  margin: auto 2rem;
+}
+
+.portfolio p {
+  display: inline-block;
+  width: 15%;
+  margin: auto 2rem
+}
+
+.about_me {
+  text-align: center;
+}
+
+footer {
+  background-color: lightblue;
+  border-style: solid;
+  margin: 20px auto;
+  border-radius: 7px;
+}
+
+.contact_me {
+  text-align: center;
+}
+
+.contact_me a {
+  font-weight: bold;
+  color: black;
+}
