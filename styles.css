@@ -1,10 +1,47 @@
+/*colours to use :
+ #0f0f1b
+ #fafbf6
+ #c6b7be
+ #bdc1c6
+ #565a75
+ #475d81
+ #22345a
+ #152040
+ #1b163f
+ #482d4b
+ #4c4e74
+ #8976a1
+ #b2a4be
+ */
+
+
+html {
+  background-color: #1b163f;
+}
+
+.page_top {
+  border: 1px solid black;
+  background-color: #0f0f1b;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page_top h1 {
+  font-family: monospace;
+}
+
 h1 {
   font-family: Arial, Helvetica, sans-serif;
+  color: #bdc1c6;
   font-weight: bold;
   text-align: center;
   font-size: 32px;
-  border: 1px solid black;
-  border-radius: 20px;
+  padding-left: 100px;
 }
 
 h2 {
@@ -17,28 +54,97 @@ h2 {
   list-style-type: none;
 }
 
+.profile {
+  display: inline-flex;
+  justify-self: flex-end;
+  border: 5px solid #482d4b;
+  margin-left: auto;
+  margin-right: 10px;
+  align-items: center;
+  background-color: #1b163f;
+}
+
+.profile p{
+  font-family: monospace;
+  font-weight: 600;
+  color: #bdc1c6;
+  margin-right: 5px;
+}
+
+.profile_pic {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  margin: 5px;
+}
+
+button {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid #152040;
+  border-radius: 10px;
+  background-color: #152040;
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #8976a1;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 5%;
+  right: 90%;
+}
+
 nav {
-  border-bottom: 1px solid black;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .crumb {
   display: inline-block;
-  background-color: blue;
-  color: white;
+  margin-left: 10px;
+  color: #b2a4be;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 900;
+  /*background-color: #565a75;
+  color: #b2a4be;
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px;*/
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #b2a4be;
 }
 
 .crumb a::after {
+  margin-left: 10px;
+  content: "|";
   display: inline-block;
-  color: white;
+  color: #b2a4be;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+
+.final_crumb {
+  display: inline-block;
+  margin-left: 10px;
+  color: #b2a4be;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 900;
+}
+.final_crumb a::after {
+  content: none;
+  margin-left: 10px;
+  display: inline-block;
+  color: #b2a4be;
   font-size: 80%;
   font-weight: bold;
   padding: 0 3px;
@@ -47,15 +153,29 @@ a {
 .background_img {
   width: 100%;
   height: auto;
+  border-radius: 100px;
+  z-index: -1;
 }
 
 .mission {
   position: relative;
 }
 
+.about_me {
+  position: relative;
+}
+
 .centered_top h2{
   position: absolute;
   top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#aboutme.centered_top h2{
+  position: absolute;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -70,13 +190,29 @@ a {
   color: white;
 }
 
+.centered_top h4{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
 .portfolio {
   border-bottom: 1px solid black;
   padding-bottom: 30px;
 }
 
+.portfolio .knight_img {
+  height: auto;
+}
+
 .portfolio_text {
+  margin-top: 10px;
   text-align: center;
+  color: #bdc1c6;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .portfolio img {
@@ -95,6 +231,8 @@ a {
 
 .about_me {
   text-align: center;
+  margin-right: 200px;
+  margin-left: 200px;
 }
 
 footer {
@@ -111,4 +249,29 @@ footer {
 .contact_me a {
   font-weight: bold;
   color: black;
+}
+
+.hollow_knight {
+  font-family: serif;
+  color: #bdc1c6;
+}
+
+.hollow_knight h3 {
+  text-align: center;
+}
+
+.bloodborne {
+  color: #bdc1c6;
+}
+
+.bloodborne h3 {
+  text-align: center;
+}
+
+.rainworld {
+  color: #bdc1c6;
+}
+
+.rainworld h3 {
+  text-align: center;
 }
